@@ -3,11 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
-        <import type="ir.es.mohammad.netflix.viewmodel.UserViewModel" />
+        <import type="ir.es.mohammad.netflix.ui.UserViewModel" />
 
         <variable
             name="user"
-            type="ir.es.mohammad.netflix.viewmodel.UserViewModel" />
+            type="ir.es.mohammad.netflix.ui.UserViewModel" />
     </data>
 
     <ScrollView

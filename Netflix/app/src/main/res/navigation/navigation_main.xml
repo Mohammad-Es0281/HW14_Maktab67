@@ -7,24 +7,24 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="ir.es.mohammad.netflix.fragments.HomeFragment"
+        android:name="ir.es.mohammad.netflix.ui.home.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/searchFragment"
-        android:name="ir.es.mohammad.netflix.fragments.SearchFragment"
+        android:name="ir.es.mohammad.netflix.ui.search.SearchFragment"
         android:label="fragment_search_soon"
         tools:layout="@layout/fragment_search" />
     <fragment
         android:id="@+id/favoriteFragment"
-        android:name="ir.es.mohammad.netflix.fragments.FavoriteFragment"
+        android:name="ir.es.mohammad.netflix.ui.favorite.FavoriteFragment"
         android:label="FavoriteFragment" />
     <fragment
         android:id="@+id/showInfoFragment"
-        android:name="ir.es.mohammad.netflix.fragments.ShowInfoFragment"
+        android:name="ir.es.mohammad.netflix.ui.show.ShowInfoFragment"
         android:label="ShowInfoFragment" />
     <fragment
         android:id="@+id/registerFragment"
-        android:name="ir.es.mohammad.netflix.fragments.RegisterFragment"
+        android:name="ir.es.mohammad.netflix.ui.register.RegisterFragment"
         android:label="RegisterFragment" />
 </navigation>

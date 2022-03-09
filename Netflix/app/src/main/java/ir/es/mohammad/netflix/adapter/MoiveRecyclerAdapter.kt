@@ -21,7 +21,7 @@ class MovieRecyclerAdapter(private var movies: ArrayList<Movie>) :
         viewHolderBinding.btnMovieAction.visibility = View.GONE
     }
 
-    inner class CustomViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    class CustomViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val viewHolderBinding: MovieBinding = DataBindingUtil.bind(itemView)!!
 
         fun setMovie(movie: Movie){

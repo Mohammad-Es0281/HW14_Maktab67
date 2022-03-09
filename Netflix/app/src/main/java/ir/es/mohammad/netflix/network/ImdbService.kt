@@ -1,17 +1,12 @@
 package ir.es.mohammad.netflix.network
 
+
 import androidx.lifecycle.LiveData
-import com.github.leonardoxh.livedatacalladapter.LiveDataCallAdapterFactory
-import com.github.leonardoxh.livedatacalladapter.LiveDataResponseBodyConverterFactory
 import com.github.leonardoxh.livedatacalladapter.Resource
 import ir.es.mohammad.netflix.model.ComingSoon
 import ir.es.mohammad.netflix.model.SearchedMovie
 import ir.es.mohammad.netflix.model.TopMovies
-import okhttp3.Interceptor
-import okhttp3.OkHttpClient
 import retrofit2.Call
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
 import retrofit2.http.Path
 

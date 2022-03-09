@@ -1,6 +1,8 @@
 package ir.es.mohammad.netflix
 
+import ir.es.mohammad.netflix.remote.MovieDataSource
 import ir.es.mohammad.netflix.network.NetworkManager
+import ir.es.mohammad.netflix.repository.MovieRepository
 
 class ServiceLocator {
 

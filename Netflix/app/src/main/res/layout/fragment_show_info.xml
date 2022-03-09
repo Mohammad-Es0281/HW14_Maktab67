@@ -4,18 +4,18 @@
 
     <data>
 
-        <import type="ir.es.mohammad.netflix.viewmodel.UserViewModel" />
+        <import type="ir.es.mohammad.netflix.ui.UserViewModel" />
 
         <variable
             name="user"
-            type="ir.es.mohammad.netflix.viewmodel.UserViewModel" />
+            type="ir.es.mohammad.netflix.ui.UserViewModel" />
     </data>
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true"
-        tools:context=".fragments.ShowInfoFragment">
+        tools:context=".ui.show.ShowInfoFragment">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"

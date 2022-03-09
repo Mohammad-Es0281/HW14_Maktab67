@@ -4,6 +4,7 @@ import com.github.leonardoxh.livedatacalladapter.LiveDataCallAdapterFactory
 import com.github.leonardoxh.livedatacalladapter.LiveDataResponseBodyConverterFactory
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
+import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
@@ -28,7 +29,8 @@ object NetworkManager {
             headers.forEach { requestBuilder.addHeader(it.first, it.second) }
             chain.proceed(requestBuilder.build())
         }
-        return OkHttpClient().newBuilder().addInterceptor(interceptor).build()
+        val logging = HttpLoggingInterceptor().apply { level = HttpLoggingInterceptor.Level.BODY }
+        return OkHttpClient().newBuilder().addInterceptor(logging).addInterceptor(interceptor).build()
     }
 
     private fun buildRetrofit(baseUrl: String, client: OkHttpClient? = null): Retrofit {
